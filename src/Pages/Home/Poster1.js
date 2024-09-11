@@ -29,30 +29,32 @@ const Poster = () => {
 
   return (
     <div className="w-full bg-gray-100 flex flex-col md:flex-row items-center p-6 rounded-lg shadow-md mx-auto transition-transform duration-300 hover:scale-80 hover:shadow-xl">
-
       <div className="flex flex-col items-center p-6 rounded-lg mx-auto w-full md:w-1/2 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-        <h2 className="text-4xl font-bold mb-4 text-center md:text-left  text-orange-500">Europe's Best Selling Mattress</h2>
+        <h2 className="text-4xl font-bold mb-4 text-center md:text-left text-orange-500">Europe's Best Selling Mattress</h2>
+        
+        {/* OFFER ENDS IN */}
         <div className="flex items-center mb-4">
-          <span className="text-xl font-semibold mr-2">OFFER ENDS IN : </span>
-          <div className="flex space-x-2 text-lg font-mono">
-            <div className="flex flex-col items-center text-xl font-semibold">
+          <span className="text-lg md:text-xl font-semibold mr-2">OFFER ENDS IN:</span>
+          <div className="flex space-x-2 text-base md:text-lg font-mono">
+            <div className="flex flex-col items-center text-base md:text-xl font-semibold">
               <span>{timeLeft.days}</span>
-              <span>DAYS</span>
+              <span className="text-xs md:text-sm">DAYS</span>
             </div>
-            <div className="flex flex-col items-center text-xl font-semibold">
+            <div className="flex flex-col items-center text-base md:text-xl font-semibold">
               <span>{timeLeft.hours}</span>
-              <span>HOURS</span>
+              <span className="text-xs md:text-sm">HOURS</span>
             </div>
-            <div className="flex flex-col items-center text-xl font-semibold">
+            <div className="flex flex-col items-center text-base md:text-xl font-semibold">
               <span>{timeLeft.minutes}</span>
-              <span>MINUTES</span>
+              <span className="text-xs md:text-sm">MINUTES</span>
             </div>
-            <div className="flex flex-col items-center text-xl font-semibold">
+            <div className="flex flex-col items-center text-base md:text-xl font-semibold">
               <span>{timeLeft.seconds}</span>
-              <span>SECONDS</span>
+              <span className="text-xs md:text-sm">SECONDS</span>
             </div>
           </div>
         </div>
+
         <Link to='/Mattresses'>
           <button className="bg-orange-500 text-white py-2 px-4 rounded-full text-lg font-semibold mb-4 transition-transform duration-300 hover:scale-105">
             SHOP NOW
@@ -63,11 +65,9 @@ const Poster = () => {
           <span className="text-2xl font-bold text-orange-500">UPTO 55% OFF</span>
           <span className="text-xl">PAYDAY SALE</span>
         </div>
-        <div className="flex space-x-4">
-          {/* <img src="path/to/icici_bank_logo.png" alt="ICICI Bank" className="h-8" />
-          <img src="path/to/axis_bank_logo.png" alt="Axis Bank" className="h-8" /> */}
-        </div>
       </div>
+
+      {/* Poster Image */}
       <div className="imgContainer w-full md:w-1/2 transition-transform duration-300 hover:scale-105">
         <img src={homepagePosterImg} alt="homepagePosterImg" className="w-full h-auto object-cover rounded-lg" />
       </div>
