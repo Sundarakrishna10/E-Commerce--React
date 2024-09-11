@@ -53,7 +53,7 @@ const ProductDetail = () => {
           </div>
           <div className="mb-4">
             <h4 className="text-lg font-semibold mb-2">Select Category</h4>
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap space-x-2 gap-1">
               {product.options.categories.map((category) => (
                 <button
                   key={category}
@@ -70,7 +70,7 @@ const ProductDetail = () => {
           </div>
           <div className="mb-4">
             <h4 className="text-lg font-semibold mb-2">Select Height</h4>
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 flex-wrap">
               {product.options.heights.map((height) => (
                 <button
                   key={height}
