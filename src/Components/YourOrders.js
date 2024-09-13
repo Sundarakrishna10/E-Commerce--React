@@ -50,7 +50,7 @@ const YourOrders = () => {
 
   if (!userInvoices.length) {
     return (
-      <div className="min-h-screen flex items-end justify-end lg:justify-end bg-cover bg-center bg-gray-800 bg-opacity-80"
+      <div className="min-h-screen flex items-center justify-end lg:justify-end bg-cover bg-center bg-gray-800 bg-opacity-80"
         style={{ backgroundImage: `url(${loginbackground})` }}>
         <div className="bg-white bg-opacity-40 shadow-xl rounded-lg p-8 max-w-md w-full m-6 lg:mr-12">
           <h2 className="text-2xl font-semibold text-gray-800">No Orders Found</h2>
