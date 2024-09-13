@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+
 const Footer = () => {
     const form = useRef();
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -183,37 +184,20 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Info</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <Link
-                                        to="/TermsAndConditions"
-                                        className="text-gray-500 dark:text-gray-400 font-medium hover:underline"
-                                    >
-                                        Terms & Conditions
-                                    </Link>
+                                    <p className="text-gray-500 dark:text-gray-400 font-medium">Customer Care Number: +91-4567890</p>
                                 </li>
                                 <li className="mb-4">
-                                    <Link
-                                        to="/PrivacyPolicy"
-                                        className="text-gray-500 dark:text-gray-400 font-medium hover:underline"
-                                    >
-                                        Privacy Policy
-                                    </Link>
+                                    <p className="text-gray-500 dark:text-gray-400 font-medium">Address: 123, Tech Street, Coimbatore, India</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-                        © 2023{' '}
-                        <Link to="/" className="hover:underline">
-                            Emma Sleep (Emma Sleep India Pvt. Ltd)
-                        </Link>
-                        . All Rights Reserved.
-                    </span>
+                    <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+                        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <Link to="/" className="hover:underline">Emma™</Link>. All Rights Reserved.</span>
+                    </div>
                 </div>
             </footer>
         </div>
